@@ -51,7 +51,7 @@ Training and Data Cleaning
 
 Model Deployment
 
-The model was deployed on the HuggingFace Spaces Gradio App. The implementation can be found in the deployment folder or here.
+The model was deployed on the HuggingFace Spaces Gradio App. The implementation can be found in the deployment folder or [here](https://huggingface.co/spaces/abrar-adnan/vehicle-recognizer)..
 
 <img src = "deployment/gradio_app.jpg" width="700" height="350"><br>
 
@@ -60,4 +60,4 @@ The confusion matrix of the model is also provided:
 <br>
 API integration with GitHub Pages
 
-The deployed model API was integrated here in GitHub Pages Website. The implementation and other details can be found in the docs folder.
+The deployed model API was integrated [here](abraradnan.github.io/vehicle-image-recognizer/) in GitHub Pages Website. The implementation and other details can be found in the docs folder.
