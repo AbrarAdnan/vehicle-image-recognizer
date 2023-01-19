@@ -2,7 +2,7 @@ remote_theme: daviddarnes/alembic@main
 plugins:
 - jekyll-remote-theme
 
-title: Cap Recognizer
+title: Vehicle Recognizer
 description: An image classification API that classifies 33 different types of vehicles used around the world
 
 author:
