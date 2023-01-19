@@ -1,8 +1,7 @@
 # vehicle-image-recognizer
 
-An image classification model from data collection, cleaning, model training, deployment and API integration. <br/>
-The model can classify 33 different types of vehicles <br/>
-The types are following: <br/>
+
+An image classification model that can classify 33 different types of vehicles, including:
 
 1.   ATV
 2.   Airplane
@@ -38,21 +37,26 @@ The types are following: <br/>
 32.  Truck
 33.  Yacht
 
-# Dataset Preparation
-**Data Collection:** Downloaded from DuckDuckGo using exact term name and other related terms to get more varient data<br/>
-**DataLoader:** Used fastai DataBlock API to set up the DataLoader. <br/>
-**Data Augmentation:** fastai provides default data augmentation which operates in GPU. <br/>
-Details can be found in `notebooks/data_prep.ipynb`
+This project covers all aspects of machine learning, including data collection, cleaning, model training, deployment, and API integration.
+Dataset Preparation
 
-# Training and Data Cleaning
-**Training:** Fine-tuned a resnet34 model for 5 epochs (1 time) and got upto ~90% accuracy. <br/>
-**Data Cleaning:** This part took the highest time. I've selected 33 labels which was initially more than that but then merged the similar labels. That's why some labels have more images than others. After collecting the data from duckduckgo API, I downloaded them and arranged them then uploaded them again for training. <br/>
+    Data Collection: The dataset was downloaded from DuckDuckGo using exact term names and related terms to gather a diverse set of images.
+    DataLoader: The fastai DataBlock API was used to set up the DataLoader.
+    Data Augmentation: fastai's default data augmentation, which operates on the GPU, was used to enhance the dataset. More details can be found in the notebooks/data_prep.ipynb file.
 
-# Model Deployment
-I deployed to model to HuggingFace Spaces Gradio App. The implementation can be found in `deployment` folder or [here](https://huggingface.co/spaces/abrar-adnan/vehicle-recognizer). <br/>
+Training and Data Cleaning
+
+    Training: A resnet34 model was fine-tuned for 5 epochs (1 time) and achieved an accuracy of ~90%.
+    Data Cleaning: This step took the most time. Initially, there were more than 33 labels, but they were merged to remove duplicates. Some labels therefore have more images than others. The dataset was collected, arranged, and uploaded again for training.
+
+Model Deployment
+
+The model was deployed on the HuggingFace Spaces Gradio App. The implementation can be found in the deployment folder or here.
+
 <img src = "deployment/gradio_app.jpg" width="700" height="350"><br>
-The confusion matrix of the model is given in the following
-<img src = "deployment/confusion_matrix.png" width="700" height="700">
 
-# API integration with GitHub Pages
-The deployed model API is integrated [here](abraradnan.github.io/vehicle-image-recognizer/) in GitHub Pages Website. Implementation and other details can be found in `docs` folder.
+The confusion matrix of the model is also provided:
+<img src = "deployment/confusion_matrix.png" width="700" height="700">
+API integration with GitHub Pages
+
+The deployed model API was integrated here in GitHub Pages Website. The implementation and other details can be found in the docs folder.
