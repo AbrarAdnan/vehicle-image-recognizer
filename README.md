@@ -56,7 +56,8 @@ The model was deployed on the HuggingFace Spaces Gradio App. The implementation 
 <img src = "deployment/gradio_app.jpg" width="700" height="350"><br>
 
 The confusion matrix of the model is also provided:
-<img src = "deployment/confusion_matrix.png" width="700" height="700">
+<img src = "deployment/confusion_matrix.jpg" width="700" height="700">
+<br>
 API integration with GitHub Pages
 
 The deployed model API was integrated here in GitHub Pages Website. The implementation and other details can be found in the docs folder.
