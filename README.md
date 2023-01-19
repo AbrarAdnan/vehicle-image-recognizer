@@ -42,13 +42,18 @@ Dataset Preparation
 
     Data Collection: The dataset was downloaded from DuckDuckGo using exact term names 
     and related terms to gather a diverse set of images.
+    
     DataLoader: The fastai DataBlock API was used to set up the DataLoader.
-    Data Augmentation: fastai's default data augmentation, which operates on the GPU, was used to enhance the dataset.
+    
+    Data Augmentation: fastai's default data augmentation, 
+    which operates on the GPU, was used to enhance the dataset.
+    
     More details can be found in the notebooks/data_prep.ipynb file.
 
 Training and Data Cleaning
 
     Training: A resnet34 model was fine-tuned for 5 epochs (1 time) and achieved an accuracy of ~90%.
+    
     Data Cleaning: This step took the most time. Initially, there were more than 33 labels, 
     but they were merged to remove duplicates. Some labels therefore have more images than others. 
     The dataset was collected, arranged, and uploaded again for training.
