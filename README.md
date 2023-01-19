@@ -52,7 +52,7 @@ Details can be found in `notebooks/data_prep.ipynb`
 I deployed to model to HuggingFace Spaces Gradio App. The implementation can be found in `deployment` folder or [here](https://huggingface.co/spaces/abrar-adnan/vehicle-recognizer). <br/>
 <img src = "deployment/gradio_app.jpg" width="700" height="350"><br>
 The confusion matrix of the model is given in the following
-<img src = "deployment/confusion_matrix.png" width="700" height="350">
+<img src = "deployment/confusion_matrix.png" width="700" height="700">
 
 # API integration with GitHub Pages
 The deployed model API is integrated [here](abraradnan.github.io/vehicle-image-recognizer/) in GitHub Pages Website. Implementation and other details can be found in `docs` folder.
