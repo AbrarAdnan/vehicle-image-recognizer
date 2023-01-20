@@ -62,7 +62,7 @@ Model Deployment
 
 The model was deployed on the HuggingFace Spaces Gradio App. The implementation can be found in the deployment folder or [here](https://huggingface.co/spaces/abrar-adnan/vehicle-recognizer).
 
-<img src = "deployment/gradio_app.jpg" width="1000" height="500"><br>
+<img src = "deployment/gradio_app.jpg" width="1000" height="450"><br>
 
 The confusion matrix of the model is also provided:
 <img src = "deployment/confusion_matrix.jpg" width="850" height="850">
