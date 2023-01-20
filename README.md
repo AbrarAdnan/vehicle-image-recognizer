@@ -52,7 +52,7 @@ Dataset Preparation
 
 Training and Data Cleaning
 
-    Training: A resnet34 model was fine-tuned for 5 epochs (1 time) and achieved an accuracy of ~90%.
+    Training: A resnet34 model was fine-tuned for 5 epochs and achieved an accuracy of ~90%.
     
     Data Cleaning: This step took the most time. Initially, there were more than 33 labels, 
     but they were merged to remove duplicates. Some labels therefore have more images than others. 
@@ -60,13 +60,14 @@ Training and Data Cleaning
 
 Model Deployment
 
-The model was deployed on the HuggingFace Spaces Gradio App. The implementation can be found in the deployment folder or [here](https://huggingface.co/spaces/abrar-adnan/vehicle-recognizer)..
+The model was deployed on the HuggingFace Spaces Gradio App. The implementation can be found in the deployment folder or [here](https://huggingface.co/spaces/abrar-adnan/vehicle-recognizer).
 
 <img src = "deployment/gradio_app.jpg" width="1000" height="500"><br>
 
 The confusion matrix of the model is also provided:
 <img src = "deployment/confusion_matrix.jpg" width="850" height="850">
 <br>
-API integration with GitHub Pages
+
+This model was used with the images found on duckduckgo. The images was focused on the vehicle heavily and there weren't much variables in terms of angle of the picture so if the pictures were taken from an unconventional angle the model would give less accurate results.
 
 The deployed model API was integrated [here](abraradnan.github.io/vehicle-image-recognizer/) in GitHub Pages Website. The implementation and other details can be found in the docs folder.
