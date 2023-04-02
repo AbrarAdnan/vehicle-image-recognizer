@@ -657,3 +657,25 @@ body, .wrap {
     border-radius: 5px;
   }
   /* New stuff */
+  .repo-btn {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .repo-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .repo-btn a:link {
+    color: #333;
+  }
+  
+  .repo-btn a:visited {
+    color: #333;
+  }
