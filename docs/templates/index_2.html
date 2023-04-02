@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+  <div class="wrap">
+    <div class="back">
+        <div class="back__slide active">
+            <div class="progress"></div>
+        </div>
+        <div class="back__slide">
+            <div class="progress"></div>
+            <div class="back-front-image"></div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card__slide active">
+            <div class="image" id="preview">
+            </div>
+            <span class="number">01</span><span class="date">30 MARCH 2017 <span class="date__time">12:37PM</span></span>
+        </div>
+        <div class="card__slide">
+            <div class="back-image"></div>
+            <div class="image"></div><span class="number">02</span><span class="date">30 MARCH 2017 <span class="date__time">12:37PM</span></span>
+        </div>
+        <div class="content">
+            <div class="content__slide active">
+                <h2 class="title"> <span class="title__line"> <span class="title__inner">Vehicle</span></span><span class="title__line"> <span class="title__inner">Recognizer</span></span></h2>
+                <p class="desc">This is an image classification model that can classify 33 different types of vehicles, including:</p>
+                <p class="desc">
+                  ATV, Airplane, Ambulance, Armored Tank, Autorickshaw, Bicycle, Boat, Buggy, Bulldozer, Cargo Ship, Cargo Truck, Crane, Excavator,Ferry, Helicopter, Hot Air Baloon, Microbus
+                  Monster Truck, Motorcycle, Multi Purpose Vehicle, Ocean Liner
+                  Police Car, Private Car
+                  Rickshaw, SUV, Sail Boat, Semi Truck
+                  Sports Car, Steam Roller, Train, Transport Bus, Truck and Yacht
+                </p>
+                <!-- <p class="desc">This Vehicle Recognizer model and this website deployment was made by Abrar Faiaz Adnan check out the github repository of this project for more info<a href="https://github.com/AbrarAdnan/vehicle-image-recognizer">here</a>.</p> -->
+                <p class="desc">This Vehicle Recognizer model and this website deployment was made by Abrar Faiaz Adnan. For more info about this project check out the <a href="https://github.com/AbrarAdnan/vehicle-image-recognizer" class="gthubbtn">GitHub Repository</a></p>
+
+                <!-- <form class = "active" method="POST" action="/" enctype="multipart/form-data">
+                  <input type="file" name="image" onchange="previewImage(event)" required>
+                  <div class="button-wrap"><a class="button" type="submit">Learn More<span class="button__hover"></span></a></div>
+                </form> -->
+                <form class="desc" method="POST" action="/" enctype="multipart/form-data" style="display: flex; align-items: center; background-color: rgba(255, 255, 255, 0.7); padding: 20px; border-radius: 10px; height: 40px;">
+                  <input type="file" name="image" onchange="previewImage(event)" required>
+                  <p id="select-message" style="display: none";>Please select an image.</p>
+                  <div class="button-wrap" style="margin-left: 20px;">
+                    <button id="submit-button" class="image-button" type="submit" style="display: none;">Submit<span class="image-button__hover"></span></button>
+                  </div>
+                </form>
+
+                <div class="button-wrap"><a class="button" type="submit">Learn More<span class="button__hover"></span></a></div>
+                
+            </div>
+            <div class="content__slide">
+                <h2 class="title"> <span class="title__line"> <span class="title__inner">Breathtaking</span></span><span class="title__line"> <span class="title__inner">Heights</span></span></h2>
+                <p class="desc">Nunc orci metus, ornare non molestie ac, ultrices eget <br /> dolor. Mauris ac mattis lectus. Praesent facilisis <br /> malesuada sapien nec pharetra. Fusce eleifend, nisl.</p>
+                <div class="button-wrap"><a class="button">Learn More<span class="button__hover"></span></a></div>
+            </div>
+            <div class="content__ping content__ping--noanimation"></div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
