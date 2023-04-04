@@ -1,7 +1,12 @@
 const slideElements = ['.back__slide', '.card__slide', '.content__slide'];
+const submitButton = document.getElementById('submit-button');
 let inProgress = false;
 const goToSlide = (slideElements, index) => {
-  console.log("wowow");
+  console.log(index);
+  // check if slideIndex is 1
+  if (index === 1){
+    submitButton.textContent = 'Submit';
+  }
   if (!inProgress) {
     inProgress = true;
     $('.active').addClass('exit');
@@ -26,6 +31,9 @@ $('.content__slide:nth-child(1) .button').on('click', function() {
 
 
 // NEW STUFF FROM HERE
+submitButton.addEventListener('click', function() {
+  submitButton.textContent = 'Please wait';
+});
 
 function previewImage(event) {
   console.log("Image Preview");
@@ -97,10 +105,19 @@ function previewImage(event) {
           const label1Element = document.getElementById('label1');
           label1Element.innerText = label1;
           const output = document.getElementById('output');
-          // output.textContent = `The model identified the picture as of ${label1} with confidence score of ${confidence1} <br>
-          // it also identifies the picture as of ${label2} with confidence score of ${confidence2} <br> and ${label3} with confidence score of ${confidence3}`;
-          output.innerHTML = `The picture was identified of ${label1} with confidence score of ${(confidence1*100).toFixed(2)}% <br>
-          it also identifies the picture as of ${label2} with confidence score of ${(confidence2*100).toFixed(2)}% <br> and ${label3} with confidence score of ${(confidence3*100).toFixed(2)}%`;
+          if (confidence1 >= 0.3) {
+            output.innerHTML = `The picture was identified of ${label1} with confidence score of ${(confidence1*100).toFixed(2)}%`;
+            if (confidence2 >= 0.3) {
+              output.innerHTML += `<br>It also identifies the picture as of ${label2} with confidence score of ${(confidence2*100).toFixed(2)}%`;
+            }
+            if (confidence3 >= 0.3) {
+              output.innerHTML += `<br>And ${label3} with confidence score of ${(confidence3*100).toFixed(2)}%`;
+            }
+          } else {
+            output.innerHTML = "The picture could not be identified.";
+          }
+          // output.innerHTML = `The picture was identified of ${label1} with confidence score of ${(confidence1*100).toFixed(2)}% <br>
+          // it also identifies the picture as of ${label2} with confidence score of ${(confidence2*100).toFixed(2)}% <br> and ${label3} with confidence score of ${(confidence3*100).toFixed(2)}%`;
           goToSlide(slideElements, 2);
           
         })
@@ -109,6 +126,8 @@ function previewImage(event) {
         });
     };
   });
+
+
 
     // detect upload working
     // function previewImage(event) {
