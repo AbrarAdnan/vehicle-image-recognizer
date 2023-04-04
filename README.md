@@ -70,4 +70,4 @@ The confusion matrix of the model is also provided:
 
 This model was used with the images found on duckduckgo. The images was focused on the vehicle heavily and there weren't much variables in terms of angle of the picture so if the pictures were taken from an unconventional angle the model would give less accurate results.
 
-The deployed model API was integrated [here](https://abraradnan.github.io/vehicle-image-recognizer/) in GitHub Pages Website. The implementation and other details can be found in the docs folder.
+The deployed model API was integrated [here](https://vehicle-recognizer-ne0s.onrender.com) in Render. The implementation and other details can be found in the docs folder.
