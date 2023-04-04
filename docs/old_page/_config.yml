@@ -1,9 +1,0 @@
-remote_theme: daviddarnes/alembic@main
-plugins:
-- jekyll-remote-theme
-
-title: Vehicle Recognizer
-description: An image classification API that classifies 33 different types of vehicles used around the world
-
-author:
-  name: Abrar Faiaz Adnan
